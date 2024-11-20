@@ -334,6 +334,10 @@ body {
 }
 
 
-.title.is-3{
+/* .title.is-3{
   color: #048c3d;
+} */
+
+.title.is-3{
+  color: #323232;
 }

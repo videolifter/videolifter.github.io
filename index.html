@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="description"
     content="VideoLifter: Lifting Videos to 3D with Fast Hierarchical Stereo Alignment">
-  <!-- <meta name="keywords" content="LightGaussian, lightgaussian, Gaussian Splatting, Gaussian"> -->
+  <meta name="keywords" content="VideoLifter, video-to-3D, Gaussian Splatting, Gaussian">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>VideoLifter: Lifting Videos to 3D with Fast Hierarchical Stereo Alignment</title>
 
@@ -81,6 +81,7 @@
     </div>
   </div>
 </nav> -->
+
 
 
   <section class="hero">
@@ -162,7 +163,7 @@
                 </span>
               </div> -->
 
-            </div>
+            <!-- </div> -->
           </div>
         </div>
       </div>
@@ -184,67 +185,19 @@
     </div>
   </div>
 </section> -->
-
-
-  <section class="hero is-light is-small">
-    <div class="hero-body">
-      <div class="container">
-        <div id="results-carousel" class=" carousel results-carousel">
-          <div class="item item-room">
-            <video poster="" id="room" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/Ignatius_compare.mp4"
-                      type="video/mp4">
-            </video>
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <div class="content has-text-justified">
+          <div style="text-align: center;">
+            <img src="./static/images/teaser.png" style="width: 50%; height: auto;">
           </div>
-  
-          <div class="item item-garden">
-            <video poster="" id="garden" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/Family_compare.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-bicycle">
-            <video poster="" id="bicycle" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/Francis_compare.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-bonsai">
-            <video poster="" id="bonsai" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/Horse_compare.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-counter">
-            <video poster="" id="counter" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/bench_415_57112_110099_compare.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-kitchen">
-            <video poster="" id="kitchen" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/apple_110_13051_23361_compare.mp4" type="video/mp4">
-            </video>
-          </div>
-        <div class="item item-train">
-          <video poster="" id="train" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/plant_247_26441_50907_compare.mp4"
-                    type="video/mp4">
-          </video>
         </div>
-        <div class="item item-struck">
-          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/skateboard_245_26182_52130_compare.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-stump">
-          <video poster="" id="stump" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/skateboard_407_54965_106262_compare.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        </div>
-        <p>We show novel views from a Bezier curve which is fitted to estimated camera poses.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
 
   <section class="section">
@@ -323,22 +276,7 @@
 
 
 
-  <section class="section">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-full-width">
-          <h2 class="title is-3">Result</h2>
-          <div class="content has-text-justified">
-            <div style="text-align: center;">
-              <img src="./static/images/teaser.png" style="width: 50%; height: auto;">
-            </div>
-            <p>Result on Tanks and Temples dataset.</p>
 
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
 
 
@@ -347,12 +285,69 @@
   <section class="section">
     <div class="container ">
       <div class=" has-text-centered">
-        <h2 class="title is-3">Visual Comparisons</h2>
+        <h2 class="title is-3">Novel View Synthesis</h2>
         <div class="content has-text-justified">
-          <p>
+          
+          <div class="hero-body">
+            <p class="has-text-centered">We show novel views from a Bezier curve which is fitted to estimated camera poses.</p>
+            <div class="container">
+              <div id="results-grid" class="columns is-multiline">
+                <div class="column is-half">
+                  <video poster="" id="ignatius" autoplay controls muted loop playsinline height="100%">
+                    <source src="./static/videos/Ignatius_compare.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="column is-half">
+                  <video poster="" id="family" autoplay controls muted loop playsinline height="100%">
+                    <source src="./static/videos/Family_compare.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="column is-half">
+                  <video poster="" id="francis" autoplay controls muted loop playsinline height="100%">
+                    <source src="./static/videos/Francis_compare.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="column is-half">
+                  <video poster="" id="horse" autoplay controls muted loop playsinline height="100%">
+                    <source src="./static/videos/Horse_compare.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="column is-half">
+                  <video poster="" id="bench" autoplay controls muted loop playsinline height="100%">
+                    <source src="./static/videos/bench_415_57112_110099_compare.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="column is-half">
+                  <video poster="" id="skateboard1" autoplay controls muted loop playsinline height="100%">
+                    <source src="./static/videos/skateboard_245_26182_52130_compare.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="column is-half">
+                  <video poster="" id="plant" autoplay controls muted loop playsinline height="100%">
+                    <source src="./static/videos/plant_247_26441_50907_compare.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="column is-half">
+                  <video poster="" id="skateboard2" autoplay controls muted loop playsinline height="100%">
+                    <source src="./static/videos/skateboard_407_54965_106262_compare.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="column is-half">
+                  <video poster="" id="apple" autoplay controls muted loop playsinline height="100%">
+                    <source src="./static/videos/apple_110_13051_23361_compare.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="column is-half">
+                  <video poster="" id="hydrant" autoplay controls muted loop playsinline height="100%">
+                    <source src="./static/videos/hydrant_106_12648_23157_compare.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
 
-          </p>
         </div>
+        <p>We show the synthesized images from testing views.</p>
         <div class="columns is-centered">
           <!-- Visual Effects. -->
           <div class="column">
@@ -475,7 +470,6 @@
         </div>
       </div>
     </div>
-    <p>We show the synthesized images from testing views.</p>
   </section>
 
   <script>
@@ -493,6 +487,11 @@
     });
 
   </script>
+
+
+<!-- <section class="hero is-light is-small">
+  
+</section> -->
 
   <!-- 
 <section class="section">
