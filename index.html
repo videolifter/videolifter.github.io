@@ -9,8 +9,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>VideoLifter: Lifting Videos to 3D with Fast Hierarchical Stereo Alignment</title>
 
-  <!-- Global site tag (gtag.js) - Google Analytics
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script> -->
   <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -23,7 +21,7 @@
     gtag('config', 'G-PYVRSFMDRL');
   </script>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link href="https://fonts.googleapis.co m/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
@@ -44,45 +42,6 @@
 
 <body>
 
-  <!-- <nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
-      </a>
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://hypernerf.github.io">
-            HyperNeRF
-          </a>
-          <a class="navbar-item" href="https://nerfies.github.io">
-            Nerfies
-          </a>
-          <a class="navbar-item" href="https://latentfusion.github.io">
-            LatentFusion
-          </a>
-          <a class="navbar-item" href="https://photoshape.github.io">
-            PhotoShape
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</nav> -->
-
-
 
   <section class="hero">
     <div class="hero-body">
@@ -91,29 +50,34 @@
 
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">VideoLifter: Lifting Videos to 3D with Fast Hierarchical Stereo Alignment</h1>
+            
 
-            <!-- <div class="is-size-4 publication-authors">
-              <span class="univerity-block">
-                <strong style="color: #27ae60;">NeurIPS 2024, ✨ Spotlight ✨</strong>
-              </span>
-            </div> -->
-
-
-
-
-            <!-- <div class="is-size-5 publication-authors">
+            <div class="is-size-5 publication-authors">
               <span class="author-block">
-                <a href="https://zhiwenfan.github.io/">Zhiwen Fan</a><sup>1</sup><sup>*</sup>,</span>
+                <a href="https://Mia-Cong.github.io/">Wenyan Cong</a><sup>1</sup><sup>*</sup>,</span>
               <span class="author-block">
                 <a href="https://kevin-2017.github.io/">Kevin Wang</a><sup>1</sup><sup>*</sup>,</span>
               <span class="author-block">
-                <a href="https://github.com/kairunwen">Kairun Wen</a><sup>2</sup>,</span>
+                <a href="https://www.cis.upenn.edu/~leijh/">Jiahui Lei</a><sup>2</sup>,</span>
               <span class="author-block">
-                <a href="https://zehaozhu.github.io/">Zehao Zhu</a><sup>1</sup>,</span>
+                <a href="https://coltonstearns.github.io/">Colton Stearns</a><sup>3</sup>,</span>
               <span class="author-block">
-                <a href="https://ir1d.github.io/">Dejia Xu</a><sup>1</sup>,</span>
+                <a href="https://caiyuanhao1998.github.io/">Yuanhao Cai</a><sup>4</sup>,</span>
+              <span class="author-block">
+                <a href="https://wdilin.github.io/">Dilin Wang</a><sup>5</sup>,</span>
+              <span class="author-block">
+                <a href="https://www.linkedin.com/in/rakesh-r-3848538/">Rakesh Ranjan</a><sup>5</sup>,</span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=A-wA73gAAAAJ&hl=en">Matt Feiszli</a><sup>5</sup>,</span>
+              <span class="author-block">
+                <a href="https://profiles.stanford.edu/leonidas-guibas">Leonidas Guibas</a><sup>3</sup>,</span>
               <span class="author-block">
                 <a href="https://express.adobe.com/page/CAdrFMJ9QeI2y/">Zhangyang Wang</a><sup>1</sup>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=d1-hNQoAAAAJ&hl=en">Weiyao Wang</a><sup>5</sup>,</span>
+              <span class="author-block">
+                <a href="https://zhiwenfan.github.io/">Zhiwen Fan</a><sup>1</sup><sup>*</sup>,</span>
+                
 
             </div>
 
@@ -121,77 +85,21 @@
               <span class="author-block"><sup>1</sup>The University of Texas at Austin</span>
               <span class="author-block"><sup>2</sup>Xiamen University</span> <br>
               <span class="author-block"><sup>*</sup>denotes equal contribution</span>
-            </div> -->
-            <!-- TODO: update paper and video link once upload -->
-            <!-- <div class="column has-text-centered">
-                <span class="link-block">
-                <a href="https://arxiv.org/pdf/2311.17245.pdf"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-                </span>
-                <span class="link-block">
-                <a href="https://arxiv.org/abs/2311.17245"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span> -->
-                <!-- Video Link. -->
-                <!-- <span class="link-block">
-                  <a href="https://youtu.be/470hul75bSM" class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                    </span>
-                    <span>Video</span>
-                  </a>
-                </span> -->
-                <!-- Code Link. -->
-                <!-- <span class="link-block">
-                  <a href="https://github.com/VITA-Group/LightGaussian"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-              </div> -->
+            </div>
 
-            <!-- </div> -->
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- <section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
-                type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
-      </h2>
-    </div>
-  </div>
-</section> -->
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
         <div class="content has-text-justified">
           <div style="text-align: center;">
-            <img src="./static/images/teaser.png" style="width: 50%; height: auto;">
+            <img src="./static/images/teaser.png">
           </div>
         </div>
       </div>
@@ -202,10 +110,9 @@
 
   <section class="section">
     <div class="container is-max-desktop">
-      <!-- Abstract. -->
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-3">Overview</h2>
+          <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
 
             <p>
@@ -231,20 +138,6 @@
           </div>
         </div>
       </div>
-      <!--/ Abstract. -->
-
-      <!-- Paper video. -->
-      <!-- <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">Video</h2>
-          <div class="publication-video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/470hul75bSM?si=7F9NL8zWbU9GtqHb"
-              title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-           encrypted-media; " allowfullscreen></iframe>
-           
-          </div>
-        </div>
-      </div> -->
     </div>
   </section>
 
@@ -253,23 +146,15 @@
 
   <section class="section">
     <div class="container is-max-desktop">
-      <!-- Concurrent Work. -->
       <div class="columns is-centered has-text-centered">
         <div class="column is-full-width">
           <h2 class="title is-3">Method Overview</h2>
           <div class="content has-text-justified">
             <img src="./static/images/network.png">
-
               <p>VideoLifter takes uncalibrated images as input and reconstructs a dense scene representation based on self-supervised photometric signals. It performs efficient sparse reconstruction through the use of ``feature points" to formulate an initial solution for globally aligned camera poses. It subsequently optimizes a set of 3D Gaussians and corrects erroneous estimations from each fragment, hierarchically aligning them into a globally coherent 3D representation.</p>
-
-
-
-
-
           </div>
         </div>
       </div>
-      <!--/ Concurrent Work. -->
 
     </div>
   </section>
@@ -412,7 +297,6 @@
 
           <!--/ Visual Effects. -->
 
-          <!-- Matting. -->
           <div class="column">
             <div class="columns is-centered">
               <div class="column content">
@@ -487,47 +371,6 @@
     });
 
   </script>
-
-
-<!-- <section class="hero is-light is-small">
-  
-</section> -->
-
-  <!-- 
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Related Links</h2>
-
-        <div class="content has-text-justified">
-          <p>
-            Needs update
-          </p>
-         
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section> -->
-
-  
-<!-- <section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@misc{fan2023lightgaussian,
-  author    = {Zhiwen Fan and Kevin Wang and Kairun Wen and Zehao Zhu and Dejia Xu and Zhangyang Wang},
-  title     = {LightGaussian: Unbounded 3D Gaussian Compression with 15x Reduction and 200+ FPS},
-  year      ={2023}, 
-  eprint    ={2311.17245}, 
-  archivePrefix={arXiv}, 
-  primaryClass={cs.CV},
-}</code></pre>
-  </div>
-</section> -->
-
-  <!-- TODO: update the arxiv link and github -->
 
 </body>
 
